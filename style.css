@@ -59,6 +59,9 @@ html,body{
   cursor: pointer;
   display: none;
 }
+.show.active{
+    color: #00882d;
+}
 form button{
     width: 100%;
     height: 45px;
