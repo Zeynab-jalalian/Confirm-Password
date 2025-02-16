@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: #f2f2f2;
+}
+.container{
+    background:#fff;
+    width: 420px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.container header{
+    font-size: 25px;
+    line-height: 33px;
+    font-weight: 600;
+    user-select: none;
+}
+.container form{
+    margin: 20px 0;
+}
+.container form .field{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    position: relative;
+}
+.field input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid lightgray;
+    padding-left: 15px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.field input:focus{
+    border-color: #00e64d;
+    box-shadow: inset 0 0 5px #00e64d;
+}
+.field .show{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 600;
+  user-select: none;
+  cursor: pointer;
+  display: none;
+}
+form button{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    user-select: none;
+    background: #009632;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: no-drop;
+}
+form button.active:hover{
+    background: #006923;
+}
+.errorText{
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(248, 78, 78);
+    background: rgb(255, 210, 217);
+    color: red;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    padding: 10px;
+    user-select: none;
+}

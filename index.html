@@ -10,14 +10,15 @@
      <div class="container">
         <header>Confirm Password Check in<br>HTML CSS && JavaScript</header>
         <form action="#">
+            <div class="errorText">Error!</div>
             <div class="field">
                 <input type="password" id="pass1" placeholder="Enter Password">
             </div>
             <div class="field">
-                <input type="password" id="pass2" placeholder="Confirm Password">
-                <button>Show</button>
+                <input type="password" id="pass2" placeholder="Confirm Password" disabled>
+                <div class="show">Show</div>
             </div>
-            <button>Check</button>
+            <button disabled>Check</button>
         </form>
      </div>
     <script src="script.js"></script>
