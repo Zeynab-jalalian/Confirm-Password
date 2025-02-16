@@ -81,6 +81,10 @@ form button{
     text-transform: uppercase;
     cursor: no-drop;
     opacity: 0.7;
+}
+form button.active{
+    cursor: pointer;
+    opacity: 1;
     transition: all 0.3s;
 }
 form button.active:hover{
