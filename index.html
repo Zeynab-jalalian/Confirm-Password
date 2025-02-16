@@ -10,12 +10,12 @@
     <div class="container">
         <header>Confirm Password Check in<br>HTML CSS && JavaScript</header>
         <form action="#">
-            <div class="error-text">Confirm Password Not Match</div>
+            <div class="error-text"></div>
             <div class="field">
                 <input type="password" placeholder="Enter Password" id="pass1" onkeyup="active()">
             </div>
             <div class="field">
-                <input type="password" placeholder="Confirm Password" id="pass2" disabled>
+                <input type="password" placeholder="Confirm Password" id="pass2" disabled onkeyup="active2()">
                 <div class="show">Show</div>
             </div>
             <button disabled>Check</button>
