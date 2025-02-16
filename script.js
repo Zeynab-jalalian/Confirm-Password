@@ -14,3 +14,17 @@ function active(){
         btn.classList.remove("active");
     }
 }
+
+btn.onclick=function(){
+    if(pass1.value != pass2.value){
+        errorText.style.display="block";
+        errorText.classList.remove("nice");
+        errorText.textContent="Error! Confirm Password Not Match";
+        return false;
+    }else{
+        errorText.style.display="block";
+        errorText.classList.add("nice");
+        errorText.textContent="Nice! Confirm Password Matched";
+        return false;
+    }
+}
